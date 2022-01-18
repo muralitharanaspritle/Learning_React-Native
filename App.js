@@ -30,6 +30,8 @@ import SectionListComp from "./Components/_20SectionList/SectionListComp";
 import PressableComp from "./Components/_21Pressable/PressableComp";
 import RefreshControlComp from "./Components/_22RefreshControl/RefreshControlComp";
 import InputAccessaryViewComp from "./Components/_23InputAccessary/InputAccessaryViewComp";
+import TouchableNativeFeedbackComp from "./Components/_24TouchableNativeFeedback/TouchableNativeFeedbackComp";
+import ToastAndroidcomp from "./Components/_25ToastAndroid/ToastAndroidcomp";
 export default function App() {
   const [theme, setTheme] = useState(false);
   const [background, setBackground] = useState("white");
@@ -78,8 +80,9 @@ export default function App() {
       <ActivityIndicatorComp/>
       <SectionListComp/> */}
       {/* <PressableComp/> */}
-      <RefreshControlComp/> 
-      
+      {/* <RefreshControlComp/>  */}
+      {/* <TouchableNativeFeedbackComp/> */}
+      <ToastAndroidcomp/>
     </View>
   );
 }
