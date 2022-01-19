@@ -32,33 +32,24 @@ import RefreshControlComp from "./Components/_22RefreshControl/RefreshControlCom
 import InputAccessaryViewComp from "./Components/_23InputAccessary/InputAccessaryViewComp";
 import TouchableNativeFeedbackComp from "./Components/_24TouchableNativeFeedback/TouchableNativeFeedbackComp";
 import ToastAndroidcomp from "./Components/_25ToastAndroid/ToastAndroidcomp";
+import AppearanceComp from "./Components/_26Appearance/AppearanceComp";
+import PlatformOS from "./Components/_27Platform/PlatformOS";
+import AnimatedComp from "./Components/_28AnimatedComp/AnimatedComp";
+import DrawerLayloutComp from "./Components/_29DrawerLayoutAndroid/DrawerLayloutComp";
+import TransformComp from "./Components/_30Transform/TransformComp";
+import BackHandlerComp from "./Components/_31BackHandler/BackHandlerComp";
+import PromptComp from "./Components/_32Prompt/PromptComp";
+import VibrationComp from "./Components/_33Vibration/VibrationComp";
+import SliderComp from "./Components/_34Slider/SliderComp";
+import NavigatorComp from "./Components/_35Navigation/NavigatorComp";
 export default function App() {
-  const [theme, setTheme] = useState(false);
-  const [background, setBackground] = useState("white");
-  const changeTheme = () => {
-    setTheme(!theme);
-    if (!theme) {
-      setBackground("black");
-    } else {
-      setBackground("white");
-    }
-  };
   return (
     <View
       style={{
         flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: background,
-        marginTop:50
+        marginTop: 50,
       }}
     >
-      {/* <Switch
-        trackColor={{ false: "black", true: "white" }}
-        thumbColor={theme ? "blue" : "red"}
-        onValueChange={changeTheme}
-        value={theme}
-      /> */}
       {/* <ViewComp />
       <TextComp />
       <ButtonComp />
@@ -82,8 +73,19 @@ export default function App() {
       {/* <PressableComp/> */}
       {/* <RefreshControlComp/>  */}
       {/* <TouchableNativeFeedbackComp/> */}
-      <ToastAndroidcomp/>
+      {/* <ToastAndroidcomp/> */}
+      {/* <AppearanceComp/> */}
+      {/* <PlatformOS/> */}
+      {/* <AnimatedComp/> */}
+      {/* <TransformComp /> */}
+      {/* <BackHandlerComp/> */}
+      {/* <PromptComp/> */}
+      {/* <VibrationComp/> */}
+      {/* <SliderComp/> */}
+      <NavigatorComp/>
     </View>
+
+    //use Drawer without View
+    // <DrawerLayloutComp/>
   );
 }
-
