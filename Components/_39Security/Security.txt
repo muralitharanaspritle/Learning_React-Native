@@ -1,0 +1,14 @@
+1.Do not send it via a network request
+2.do not ship into app code
+3.do not save it in Async Storage
+
+
+4.do calculate permission server-side
+5.do only send the user data they are allowed to see
+6.do use secure Storage eg. react-native-sensitive-info
+                            react-native-keychain
+
+                            for Token
+
+
+7.authentication(pin,fingerprint,token)

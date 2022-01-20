@@ -42,14 +42,18 @@ import PromptComp from "./Components/_32Prompt/PromptComp";
 import VibrationComp from "./Components/_33Vibration/VibrationComp";
 import SliderComp from "./Components/_34Slider/SliderComp";
 import NavigatorComp from "./Components/_35Navigation/NavigatorComp";
+import NavigationComp from "./Components/_36StackNavigation/NavigationComp";
+import BottomTabNavigationComp from "./Components/_37BottomTabNavigation/BottomTabNavigationComp";
+import APICall from "./Components/_38APIfetching/APICall";
 export default function App() {
   return (
     <View
       style={{
         flex: 1,
-        marginTop: 50,
+        backgroundColor:"yellow",
+        marginTop:50
       }}
-    >
+    > 
       {/* <ViewComp />
       <TextComp />
       <ButtonComp />
@@ -82,7 +86,10 @@ export default function App() {
       {/* <PromptComp/> */}
       {/* <VibrationComp/> */}
       {/* <SliderComp/> */}
-      <NavigatorComp/>
+      {/* <NavigatorComp/> */}
+      {/* <NavigationComp/> */}
+      {/* <BottomTabNavigationComp/>  */}
+      <APICall/>
     </View>
 
     //use Drawer without View
