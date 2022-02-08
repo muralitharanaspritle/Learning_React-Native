@@ -43,24 +43,32 @@ import VibrationComp from "./Components/_33Vibration/VibrationComp";
 import SliderComp from "./Components/_34Slider/SliderComp";
 import NavigatorComp from "./Components/_35Navigation/NavigatorComp";
 import NavigationComp from "./Components/_36StackNavigation/NavigationComp";
-import BottomTabNavigationComp from "./Components/_37BottomTabNavigation/BottomTabNavigationComp";
+//import BottomTabNavigationComp from "./Components/_37BottomTabNavigation/BottomTabNavigationComp";
 import APICall from "./Components/_38APIfetching/APICall";
+import ContextAPIComp from "./Components/_40ContextApi/ContextAPIComp";
+import CustomAlert from "./Components/_41CustomAlert/CustomAlert";
+import Parent from "./Components/_42UseImperative/Parent";
+import ProgressBarComp from "./Components/_43ProgressView/ProgressBarComp";
+import AnimationComp from "./Components/_44Animation/AnimationComp";
+import DateInputComp from "./Components/_45DateTextInput/DateInputComp";
 export default function App() {
   return (
     <View
       style={{
         flex: 1,
-        backgroundColor:"yellow",
-        marginTop:50
+        backgroundColor: "yellow",
+        marginTop: 50,
+        alignItems: "center",
+        justifyContent: "center",
       }}
-    > 
+    >
       {/* <ViewComp />
       <TextComp />
       <ButtonComp />
       <State />
       <TextInputComp />
       <ListandScroll />
-      <TouchableComp />
+      <TouchableComp /> 
       <ExternalStyle />
       <ImageComp />
       <AlertDialog />
@@ -89,7 +97,13 @@ export default function App() {
       {/* <NavigatorComp/> */}
       {/* <NavigationComp/> */}
       {/* <BottomTabNavigationComp/>  */}
-      <APICall/>
+      {/* <APICall/> */}
+      {/* <ContextAPIComp/> */}
+      {/* <CustomAlert /> */}
+      {/* <Parent/> */}
+      {/* <ProgressBarComp /> */}
+      {/* <AnimationComp/> */}
+      <DateInputComp/>
     </View>
 
     //use Drawer without View

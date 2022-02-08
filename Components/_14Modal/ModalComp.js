@@ -6,7 +6,7 @@ export default function ModalComp() {
     <View>
       <Text>This is comp</Text>
       <Button onPress={() => setIsOpen(true)} title="open modal"></Button>
-      <Modal visible={isOpen}>
+      <Modal visible={isOpen}  >
         <View style={styles.container}>
           <Text>This is Modal</Text>
           <Button onPress={() => setIsOpen(false)} title="close"></Button>

@@ -22,7 +22,7 @@ export default function DrawerLayloutComp() {
 
   const navigationView = () => {
     return (
-      <View style={([styles.container, styles.navigationContainer])}>
+      <View style={[styles.container, styles.navigationContainer]}>
         <Text style={styles.paragraph}>I am in the drawer</Text>
         <Button
           title="close drawer"
@@ -31,6 +31,7 @@ export default function DrawerLayloutComp() {
       </View>
     );
   };
+
   return (
     <DrawerLayoutAndroid
       ref={drawer}
@@ -38,7 +39,7 @@ export default function DrawerLayloutComp() {
       drawerPosition={drawerPosition}
       renderNavigationView={navigationView}
     >
-     <View style={styles.container}>
+      <View style={styles.container}>
         <Text style={styles.paragraph}>Drawer on the {drawerPosition}</Text>
         <Button
           title="change position"

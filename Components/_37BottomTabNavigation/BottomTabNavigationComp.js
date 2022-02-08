@@ -11,7 +11,7 @@ const BottomTabNavigationComp = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Home" component={HomeScreen}  />
         <Tab.Screen name="User" component={UserScreen} />
         <Tab.Screen name="Product" component={ProductScreen} />
       </Tab.Navigator>
